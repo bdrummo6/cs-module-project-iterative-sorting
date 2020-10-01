@@ -6,9 +6,9 @@
 
 ## Objectives
 
-- [ ] describe the differences between Linear and Binary Search algorithms
-- [ ] define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
-- [ ] distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
+- describe the differences between Linear and Binary Search algorithms
+- define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
+- distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
 
 ## Introduction
 
@@ -24,8 +24,8 @@ As you begin interviewing for jobs, you will often be expected to be able to imp
 - [X] Read through the descriptions of the `bubble_sort` and `selection_sort` algorithms
 - [X] Implement `bubble_sort` and `selection_sort` in [iterative_sorting.py](src/iterative_sorting/iterative_sorting.py)
 - [X] Test your implementation by running `test_iterative.py`
-- [ ] Implement all the methods in the [searching.py](src/searching/searching.py) file in the [searching](src/searching) directory.
-- [ ] Test your implementation of the searching methods by running `test_searching.py`.
+- [X] Implement all the methods in the [searching.py](src/searching/searching.py) file in the [searching](src/searching) directory.
+- [X] Test your implementation of the searching methods by running `test_searching.py`.
 
 ## Stretch goals
 
