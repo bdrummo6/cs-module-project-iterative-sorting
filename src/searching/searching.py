@@ -10,19 +10,6 @@ def linear_search(arr, target):
 
     return -1  # An element that matches the target is not found
 
-
-# Test list to search
-list_1 = [8, 7, 14, 12, 45, 15, 35, 18, 23, 76]
-
-print('\nSearching the list for an element value of 15: ')
-# Search list for element with the value 15
-print(linear_search(list_1, 15))  # Should print 5
-
-print('\nSearching the list for an element value of 3: ')
-# Search list for element with the value 3
-print(linear_search(list_1, 3))  # Should print -1, because 3 is not in the list
-
-
 # Write an iterative implementation of Binary Search
 def binary_search(arr, target):
     # Initialize the first and last values for keeping track of the start and end indices of the current list

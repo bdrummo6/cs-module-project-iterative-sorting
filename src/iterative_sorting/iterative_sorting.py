@@ -1,4 +1,8 @@
 # TO-DO: Complete the selection_sort() function below
+"""
+During each iteration of the selection sort algorithm it takes the smallest element and swaps it with the
+element in the corresponding position to the left.
+"""
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr)-1):
@@ -16,6 +20,10 @@ def selection_sort(arr):
 
 
 # TO-DO:  implement the Bubble Sort function below
+"""
+The bubble_sort algorithm sorts a list of elements by comparing two adjacent elements and swapping them, 
+if they are not in the correct order.
+"""
 def bubble_sort(arr):
     # Starts at the last element and ends at the first element, moving every iteration one element
     for i in range(len(arr)-1, 0, -1):
