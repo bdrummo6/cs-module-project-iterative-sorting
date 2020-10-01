@@ -1,11 +1,26 @@
+"""
+The linear search function checks every element and if an element matches the target
+then that element's index is returned. Return -1 if no element matches the target.
+"""
 def linear_search(arr, target):
-    # loops through the list
+    # Loops through all elements of a list until target value is found or the end of the list is reached
     for i in range(len(arr)):
-        # If an element in the list is equal to the target then return the element's index
         if arr[i] == target:
-            return i  # target value found in list (arr)
+            return i  # Element that matches target is found and index of element is returned
 
-    return -1  # target value not found in list (arr)
+    return -1  # An element that matches the target is not found
+
+
+# Test list to search
+list_1 = [8, 7, 14, 12, 45, 15, 35, 18, 23, 76]
+
+print('\nSearching the list for an element value of 15: ')
+# Search list for element with the value 15
+print(linear_search(list_1, 15))  # Should print 5
+
+print('\nSearching the list for an element value of 3: ')
+# Search list for element with the value 3
+print(linear_search(list_1, 3))  # Should print -1, because 3 is not in the list
 
 
 # Write an iterative implementation of Binary Search
@@ -32,3 +47,4 @@ def binary_search(arr, target):
                 first = mid + 1
 
     return -1  # target value not found in list (arr)
+
