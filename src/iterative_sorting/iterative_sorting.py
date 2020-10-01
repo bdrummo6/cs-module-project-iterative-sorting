@@ -1,35 +1,60 @@
 # TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
     # loop through n-1 elements
-    for i in range(0, len(arr) - 1):
-        cur_index = i
-        smallest_index = cur_index
+    for i in range(0, len(arr)-1):
+        smallest_index = i
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc)
-        # Your code here
+        for j in range(i+1, len(arr)):
+            if arr[j] < arr[smallest_index]:
+                smallest_index = j
 
         # TO-DO: swap
-        # Your code here
+        arr[i], arr[smallest_index] = arr[smallest_index], arr[i]
 
     return arr
 
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-    # Your code here
+    # Starts at the last element and ends at the first element, moving every iteration one element
+    for i in range(len(arr)-1, 0, -1):
+        for j in range(i):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 
     return arr
 
+"""
+# Selection Sort Testing
 
-l1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+s_list = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]  # Create list for sorting
 
-print(l1)
+print('\nList in original order: ')
+print(s_list)  # Prints list in original order: [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 
-selection_sort(l1)
+selection_sort(s_list)  # Call selection_sort function on list
 
-print(l1)
+print('\nList after sorted using the selection_sort function: ')
+print(s_list)  # Print sorted list
+print()
 
-'''
+
+# Bubble Sort Testing
+
+b_list = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]  # Create list for sorting
+
+print('\nList in original order: ')
+print(b_list)  # Prints list in original order: [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+
+print('\nList after sorted using the bubble_sort function: ')
+bubble_sort(b_list)
+
+print(b_list)
+
+"""
+
+"""
 STRETCH: implement the Counting Sort function below
 
 Counting sort is a sorting algorithm that works on a set of data where
@@ -45,7 +70,8 @@ showed up, we can construct a sorted set of the input data from the
 buckets. 
 
 What is the time and space complexity of the counting sort algorithm?
-'''
+"""
+
 def counting_sort(arr, maximum=None):
     # Your code here
 
