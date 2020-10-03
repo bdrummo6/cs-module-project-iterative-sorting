@@ -5,8 +5,9 @@ element in the corresponding position to the left.
 """
 def selection_sort(arr):
     for i in range(len(arr)):
+        # initialize index for being the index holding the current index
         smallest = i
-        # Starting with the current index comparing the element at smallest_i with all of the elements in arr
+        # Starting with the current index comparing the current smallest element with all of the elements in arr
         for j in range(i, len(arr)):
             # if the element at smallest_i is greater than the one at j then j becomes the new smallest_i
             if arr[j] < arr[smallest]:
