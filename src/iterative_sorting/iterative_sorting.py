@@ -4,16 +4,16 @@ During each iteration of the selection sort algorithm it takes the smallest elem
 element in the corresponding position to the left.
 """
 def selection_sort(arr):
-    # loop through n-1 elements
     for i in range(len(arr)-1):
-        smallest_i = i
-        # TO-DO: find next smallest element
+        smaller_i = i
+        # Starting with the current index comparing the element at smallest_i with all of the elements in arr
         for j in range(i, len(arr)):
-            if arr[j] < arr[smallest_i]:
-                smallest_i = j
+            # if the element at smallest_i is greater than the one at j then j becomes the new smallest_i
+            if arr[j] < arr[smaller_i]:
+                smaller_i = j
 
         # Swapping the elements with the current index and current smallest index
-        arr[i], arr[smallest_i] = arr[smallest_i], arr[i]
+        arr[i], arr[smaller_i] = arr[smaller_i], arr[i]
 
     return arr
 
