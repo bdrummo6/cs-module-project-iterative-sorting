@@ -83,7 +83,7 @@ What is the time and space complexity of the counting sort algorithm?
 """
 
 def counting_sort(arr, maximum=None):
-    # Check if the list is empty and returns and empty list  if so
+    # Check if the list is empty and returns and empty list if so
     if not arr:
         return []
     # If maximum is None then set calculate the maximum value in the list
