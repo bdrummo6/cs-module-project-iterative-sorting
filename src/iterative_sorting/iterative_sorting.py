@@ -24,15 +24,18 @@ The bubble_sort algorithm sorts a list of elements by comparing two adjacent ele
 if they are not in the correct order.
 """
 def bubble_sort(arr):
-    # Starts at the last element and ends at the first element, moving every iteration one element
+    # At the end of a loop the largest value will be at the current last index, and will not be iterated through again
     for i in range(len(arr)-1, 0, -1):
+        # loops through arr starting at 0 and stops at the current value of i
         for j in range(i):
+            # if the value at j is greater than the value at the next index, then swap values
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
 
     return arr
 
 
+"""
 # Selection Sort Testing
 
 s_list = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]  # Create list for sorting
@@ -51,14 +54,14 @@ print()
 
 b_list = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]  # Create list for sorting
 
-print('\nList in original order: ')
+print('List in original order: ')
 print(b_list)  # Prints list in original order: [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 
 print('\nList after sorted using the bubble_sort function: ')
 bubble_sort(b_list)
 
 print(b_list)
-
+"""
 
 
 """
